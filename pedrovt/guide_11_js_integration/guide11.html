@@ -1,0 +1,106 @@
+<!-- Pedro Teixeira -->
+<!-- LABI 2016 | MIECT DETI UA -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>Guião 11</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Highcharts JS -->
+  <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+  <!-- LeaftLet JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Menus -->
+      <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Guião 11</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#componentes" class="dropdown-toggle" data-toggle="dropdown">
+                  11.2. Componentes<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#popups">PopUps</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="#graficos">11.3. Gráficos</a></li>
+                <li><a href="#mapas">11.4. Mapas</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Default</a></li>
+              </ul>
+            </div>
+          </nav>
+
+      <!---Pop Ups -->
+      <h2 id="popups">Pop Ups</h2>
+      <button class="btn btn-danger" data-toggle="modal" data-target="#oMeuPopup">Abrir popup</button>
+      <br>
+      <div id="oMeuPopup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close"
+              data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Título</h4>
+            </div>
+            <div class="modal-body">
+              <p>Conteúdo</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráficos -->
+      <h2 id="graficos">Gráficos</h2>
+
+      <div id="grafico-linhas" style="width: 700px; height: 500px;"></div>
+        <script type="text/javascript" src="guide11_graphics.js"></script>
+        <button class="btn btn-info" onclick="desenhaGraficoLinhas()">Grafico de Linhas</button>
+
+      <div id="grafico-barras" style="width: 700px; height: 500px;"></div>
+        <script type="text/javascript" src="guide11_graphics.js"></script>
+        <button class="btn btn-primary" onclick="desenhaGraficoBarras()">Grafico de Barras</button>
+
+      <!-- Mapas -->
+      <h2 id="mapas">Mapas</h2>
+      <div id="oMeuMapa" style="width: 500px; height: 400px"></div>
+        <script type="text/javascript" src="guide11_maps.js"></script>
+        <span id="coordenadas"></span>
+
+      <!-- Comentários -->
+      <div id="disqus_thread"></div>
+      <script>
+          (function() {  // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+
+          s.src = '//jamesgosling.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <script id="dsq-count-scr" src="//jamesgosling.disqus.com/count.js" async></script>
+
+    <!-- Fim da página -->
+    </div>
+  </body>
+  </html>

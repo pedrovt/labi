@@ -1,0 +1,33 @@
+<!-- Pedro Teixeira -->
+<!-- LABI 2016 | MIECT DETI UA -->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="guide10_c.js"></script>
+</head>
+<body>
+  <h1>10.4 Interação com o DOM (II/II)</h1>
+  <input id="op1" value="" />
+  <span id="op-view">+</span>
+  <input id="op2" value="" />
+  <span>=</span>
+  <input id="res" value=""/><br/>
+  <select onchange="operacao()">
+    <option value="+"> Soma </option>
+    <option value="-"> Subtração </option>
+    <option value="*"> Produto </option>
+    <option value="/"> Divisão </option>
+  </select>
+  <button onclick="calcular()">Calcular</button>
+  <!-- Exercício 10.17 :D <button id="btn" onclick="calcular()" onmouseover="mover('btn')">Calcular</button> -->
+
+  <!-- Temporizadores -->
+  <h2>Temporizadores</h2>
+  </br>
+  </br>
+
+  <img id="image" onclick="diminuirVertical(image)" src="http://www.ua.pt/images/40anos.png"</img>
+
+</body>
+</html>

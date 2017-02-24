@@ -1,0 +1,31 @@
+.a {
+    color: red;
+    font-size: 70%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.b {
+    font-family: "Slabo", sans-serif;
+    text-shadow: 2px 2px #ff0000;
+}
+
+table,
+td {
+    border: 2px solid indigo;
+}
+
+#coldest {
+    background-color: dodgerblue;
+}
+
+#hottest {
+    background-color: red;
+}
+
+.button-ok {
+    background-color: green;
+}
+
+.button-cancel {
+    background-color: red;
+}
