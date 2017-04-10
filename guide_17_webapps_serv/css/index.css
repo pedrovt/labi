@@ -1,0 +1,10 @@
+#index-header{
+	height:100vh;
+	background-image: url('../img/header_index.jpg');
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-custom {
+    background: transparent;
+	}
+}

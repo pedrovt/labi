@@ -1,0 +1,171 @@
+<!-- Trabalho Prático -->
+<!-- Simão Gomes | Pedro Teixeira -->
+<!-- LABI 2016-2017 | MIECT DETI UA -->
+
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Análise da Estrutura da Internet</title>
+
+		<!-- Optimiza a pagina para uso em Mobile Devices e não permite ao utilizador ampliar a pagina (native app style) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Theme CSS (template) -->
+		<link href="css/clean-blog.css" rel="stylesheet">
+
+		<!-- Custom Fonts (template) -->
+		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
+	</head>
+
+	<body>
+		<!-- HEADER DA PÁGINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<!-- url(IMAGE), being IMAGE the path to the background -->
+		<header class="intro-header" style="background-image: url('img/header.png')">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-16 col-md-10 col-md-offset-1">
+						<div class="site-heading text-center">
+							<h1>Acerca de</h1>
+							<hr class="small">
+							<span class="subheading">
+									<p><img src="img/ua.png" alt="Logo UA height="80" width="80""></img></p>
+									<p>
+										Projecto 1 de Laboratórios de Informática
+										<br>
+										Desenvolvimento de um conjunto de páginas Web utilizando HTML, CSS e Javascript.
+									</p>
+								</div>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- BARRA NAVEGAÇAO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+				<div class="container">
+					<!-- Header -->
+					<div class="navbar-header">
+						<!-- Título -->
+						<a class="navbar-brand" href="index.html">Análise da Estrutura da Internet</a>
+						<!-- Cria um botão Menu com as opções da barra de navegação quando a página é utilizada em ecrãs mais pequenos -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-options">
+							<span class="glyphicon glyphicon-th-large"></span> Menu
+						</button>
+					</div>
+					<!-- Páginas -->
+					<div class="navbar-collapse collapse" id="navbar-options">
+						<ul class="nav navbar-nav">
+							<!-- Area de introdução ao trabalho -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trabalho<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a data-scroll href="work.html#abstract">Resumo</a></li>
+									<li class="divider"></li>
+									<li><a data-scroll href="work.html#intro">Introdução ao tema</a></li>
+								</ul>
+							</li>
+							<!-- Área de análise, resultados e apresentação de conclusoes diretas -->
+							<li><a href="experiment.html">Metodologia</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resultados<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a data-scroll href="results.html">Resultados</a></li>
+									<li class="divider"></li>
+									<li><a data-scroll href="results.html#conclusions">Conclusões</a></li>
+								</ul>
+							</li>
+							<!-- Conclusoes finais e revisão dos conceitos -->
+							<li><a href="tools.html">Ferramentas</a></li>
+						</ul>
+
+						<!-- Página Inicial. Área sobre o trabalho e autores -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html"><i class="glyphicon glyphicon glyphicon-home fa-1x"></i> Início</a></li>
+							<li class="active"><a href="about.html"><i class="glyphicon glyphicon-info-sign fa-1x"></i> Acerca</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<!-- FIM BARRA NAVEGAÇAO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		<!--  Conteudo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<div class="container">
+					<!-- Autores e Data de Criação -->
+					<div class="col-lg-4 col-lg-offset-2 text-center">
+						<i class="text-primary glyphicon glyphicon-user fa-2x"></i>
+						<br><a href="mailto:simaogomes@ua.pt">Simão Gomes (84819)</a>
+						<br><a href="mailto:pedro.teix@ua.pt">Pedro Teixeira (84715)</a>
+						<p>
+							<i class="text-primary glyphicon glyphicon-calendar fa-2x"></i>
+							<br>Dezembro 2016
+							<br>Janeiro 2017
+						<p>
+					</div>
+					<!-- Disciplina, o curso e a universidade, CodeUA e Repositório Git-->
+					<div class="col-lg-4  text-center">
+						<i class="text-primary glyphicon glyphicon-cloud fa-2x"></i>
+						<br><a href="https://code.ua.pt/git/labi2016-networks-3">Repositório Git do Projecto</a>
+						<br><a href="https://code.ua.pt/projects/labi2016-networks-3">Projecto no CodeUA</a></p>
+						<p>
+							<i class="text-primary glyphicon glyphicon-education fa-2x"></i>
+							<br>MIECT
+							<br>DETI - UA
+						</p>
+					</div>
+					<br>
+					<!-- Recursos Utilizados e Contribuições dos Autores -->
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<i class="text-primary glyphicon glyphicon-book fa-2x"></i>
+						<br><b>Recursos Utilizados</b>
+						<br><a href="http://getbootstrap.com/">Bootstrap : Getting Started, CSS & Components</a>
+						<br><a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog Bootstrap Theme</a>
+						<br><a href="	http://robotmonkeys.net/2010/12/18/the-facebook-map/">The Facebook Map</a>
+						<br><a href="http://www.highcharts.com/">Highcharts Graphs</a>
+						<br><a href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a>
+						<br><a href="https://hackertarget.com">HackerTarget API</a>
+						<br><a href="https://jquery.com/">JQuery</a>
+
+						<hr class="primary">
+						<p>Firefox, Chrome, Safari e Opera <i class="glyphicon glyphicon-ok text-primary"></i></p>
+						<p>Smartphone, Tablet, Desktop <i class="glyphicon glyphicon-ok text-primary"></i></p>
+						<hr class="primary">
+
+						<i class="text-primary glyphicon glyphicon-stats fa-2x"></i>
+						<br><b>Contribuições dos Autores</b>
+						<p><b>Simão Gomes (50%):</b> Estrutura base do site em Bootstrap (default theme). Criação e implementação dos gráficos comparativos utilizando JavaScript(JQuery), API's e CSS. Implementação da página Ferramentas com ligação a API's externas e JavaScript(JQuery). Implementação da página Resultados. Criação de CSS dedicado. Teste e validação do código do site.</p>
+						<p><b>Pedro Teixeira (50%):</b> Estrutura do site: estrutura das páginas, implementação do estilo CSS (custom theme) e da barra de navegação (incluindo comportamento desta em diferentes resoluções). Adaptação e introdução do conteúdo do trabalho no website (incluido uso de <code>abbr</code> e <code>code</code>). Implementação da página Resultados. Teste e validação do código do site.</p>
+					</div>
+			</div>
+			<!--  FIM Conteudo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+			<!-- RODAPÉ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+			<footer>
+				<div class="container text-center">
+					<p class="copyright text-muted" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+						<img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons</p>
+						<a class="copyright text-muted">Copyright &copy; Simão Gomes | Pedro Teixeira 2016-2017
+				</div>
+			</footer>
+			<!-- FIM RODAPÉ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+	</body>
+</html>

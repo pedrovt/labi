@@ -1,0 +1,95 @@
+.trace-iphone{
+	max-height: 600px;
+}
+
+.text-details{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.withColorContainer{
+	background-color: #c4d5ed;
+}
+
+.content-results{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	min-height: 700px;
+}
+
+.highlightColorContainer{
+	padding-top: 60px;
+	background-color: #3e3e40;
+	color: #E0E0E3;
+}
+
+.checkbox{
+	font-size: 20px;
+}
+
+.btn{
+	letter-spacing: 1px;
+  	border-radius: 300px;
+  	padding: 10px 10p
+}
+
+#graph-containers{
+	padding-bottom: 50px;
+	min-height: 30px;
+}
+
+#graph-div{
+  	left: 0;
+  	right: 0;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 80%;
+	height: 400px;
+	display: none;
+	padding-top: 35px;
+}
+
+h4{
+	color: #3e3e40;
+}
+
+.modal-dialog{
+    position: relative;
+    display: table;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px;
+}
+
+#imagepreview{
+	max-height: 600px;
+}
+
+.imageresource{
+	width: 40px;
+	height: 40px;
+}
+
+#notes{
+	font-size: 10px;
+}
+
+.results-part{
+	padding-top: 30px;
+}
+
+@media only screen and (max-width : 480px) {
+    .btn-checkbox{
+        width:20%;
+        font-size: 9px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .btn-group{
+    	width: 98%;
+    }
+}

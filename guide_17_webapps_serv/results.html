@@ -1,0 +1,340 @@
+<!-- Trabalho Prático -->
+<!-- Simão Gomes | Pedro Teixeira -->
+<!-- LABI 2016-2017 | MIECT DETI UA -->
+
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Análise da Estrutura da Internet</title>
+
+		<!-- Optimiza a pagina para uso em Mobile Devices e não permite ao utilizador ampliar a pagina (native app style) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Custom Fonts (template) -->
+		<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
+
+		<!-- Theme CSS (template) -->
+		<link href="css/clean-blog.css" rel="stylesheet">
+
+		<!-- CSS Dedicado à página -->
+		<link href="css/results.css" rel="stylesheet">
+
+		<!-- Gráficos -->
+		<script type="text/javascript"src="http://code.highcharts.com/highcharts.js"></script>
+		<script type="text/javascript" src="js/graph-theme.js"></script>
+		<script type="text/javascript" src="js/prod-graph.js"></script>
+		<script type="text/javascript" src="js/pop-image.js"></script>
+
+		<!-- Smooth Scroll for Header Links -->
+		<script src="js/smooth-scroll.js"></script>
+		<script>
+    	smoothScroll.init();
+		</script>
+	</head>
+
+	<body>
+		<!-- HEADER DA PÁGINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<!-- url(IMAGE), being IMAGE the path to the background -->
+		<header class="intro-header" style="background-image: url('img/header.png')">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-16 col-md-10 col-md-offset-1">
+						<div class="site-heading text-center">
+							<h1>Resultados</h1>
+							<hr class="small">
+							<span class="subheading">
+								<p>Resultados e conclusões do trabalho.</p>
+								<p>Capturas de ecrã que expressam os resultados obtidos através da execução do comando <i>traceroute</i> para os vários destinos.</p>
+								<br>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#google-results"><h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Google</h4></a></div>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#facebook-results"><h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Facebook</h4></a></div>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#thomman-results"><h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Thomman</h4></a></div>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#nos-results"><h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> NOS</h4></a></div>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#ua-results"><h4><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> UA</h4></a></div>
+								<div class="col-md-2 col-sm-4"><a data-scroll href="#compare-results"><h4><span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> Comparar</h4></a></div>
+							</span>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- FIM HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		<!-- BARRA NAVEGAÇAO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<div class="container-fluid">
+		  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+				<div class="container">
+
+					<!-- Header -->
+	    		<div class="navbar-header">
+						<!-- Título -->
+						<a class="navbar-brand" href="index.html">Análise da Estrutura da Internet</a>
+						<!-- Cria um botão Menu com as opções da barra de navegação quando a página é utilizada em ecrãs mais pequenos -->
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-options">
+	            <span class="glyphicon glyphicon-th-large"></span> Menu
+	          </button>
+					</div>
+					<!-- Páginas -->
+					<div class="navbar-collapse collapse" id="navbar-options">
+						<ul class="nav navbar-nav">
+							<!-- Area de introdução ao trabalho -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trabalho<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a data-scroll href="work.html#abstract">Resumo</a></li>
+									<li class="divider"></li>
+									<li><a data-scroll href="work.html#intro">Introdução ao tema</a></li>
+								</ul>
+							</li>
+							<!-- Área de análise, resultados e apresentação de conclusoes diretas -->
+							<li><a href="experiment.html">Metodologia</a></li>
+							<li class="active dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resultados<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a data-scroll href="results.html">Resultados</a></li>
+									<li class="divider"></li>
+									<li><a data-scroll href="results.html#conclusions">Conclusões</a></li>
+								</ul>
+							</li>
+							<!-- Conclusoes finais e revisão dos conceitos -->
+							<li><a href="tools.html">Ferramentas</a></li>
+						</ul>
+
+						<!-- Página Inicial. Área sobre o trabalho e autores -->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html"><i class="glyphicon glyphicon glyphicon-home fa-1x"></i> Início</a></li>
+							<li><a href="about.html"><i class="glyphicon glyphicon-info-sign fa-1x"></i> Acerca</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- FIM BARRA NAVEGAÇAO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		<!-- Resultados + Análise %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<div id="results">
+			<!-- Start GOOGLE -->
+			<div class="container results-part" id="google-results">
+				<h4 class="section-heading text-center">Google.com</h4>
+				<div class="row content-results">
+					<div class="col-md-6">
+						<img class="img-responsive trace-iphone img-rounded center-block" src="img/results/fullsize/Google-Iphone.jpg">
+					</div>
+					<div class="col-md-6 text-details">
+						<p>
+							O tráfego entre Aveiro e os servidores que alojam o website <a href="http://www.google.com">www.google.com</a> flui diretamente pelo Atlântico, nomeadamente por um dos cabos transatlânticos existentes.
+						</p>
+						<p>
+							Temos portanto uma ligação de certa forma privilegiada, especialmente considerando que em ambos os operadores o número de "saltos" não foi superior a 6 desde o momento que o tráfego saiu da rede local de origem.
+						</p>
+						<p>
+							O tráfego proveniente do <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone foi roteado por menos equipamentos até chegar ao destino. De notar que, uma vez que o destino era o mesmo nas duas situações, o tráfego foi roteado no final para o mesmo endereço <code>216.58.210.132</code>
+						</p>
+						<a id="g-i-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Google-Iphone.jpg" alt="Google | ISP: NOS | Traceroute"></a>
+						<a id="g-w-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Google-Windows.png" alt="Google | ISP: Vodafone | Traceroute"></a>
+						<a id="g-v-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Google-Visual.png" alt="Google | ISP: NOS | Visual Traceroute"></a>
+					</div>
+				</div>
+			</div>
+			<!-- End GOOGLE -->
+			<!-- Start Facebook -->
+			<div class="withColorContainer" id="facebook-results">
+				<div class="container results-part">
+					<h4 class="section-heading text-center">Facebook.com</h4>
+					<div class="row content-results">
+						<div class="col-md-6 text-details">
+							<p>
+								O teste feito com destino a <a href="http://www.facebook.com">www.facebook.com</a> evidencia diferenças entre <abbr title="Internet Service Provider" class="initialism">ISP</abbr>'s.
+		    					O tráfego originado no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone percorre um menor numero de <i>routers</i> até chegar ao seu destino.
+							</p>
+							<p>
+								A ligação ao Facebook por parte do <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone em Portugal é mais privilegiada do que a ligação utilizada pelo <abbr title="Internet Service Provider" class="initialism">ISP</abbr> NOS. Com os dados obtidos podemos pelo menos concluir que a ligação originada no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone foi efetuada mais rapidamente do que a outra.
+							</p>
+							<p>
+								A diferença evidente entre os resultados obtidos deve-se ao facto de o tráfego originado no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone ter sido redirecionado para um servidor em Espanha enquanto o tráfego originado no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> NOS ter sido redirecionado para a Irlanda, demorando mais tempo e "saltando" entre mais <i>routers</i>.
+							</p>
+							<p id="notes">* O resultado acima é influenciado pelo balanceamento de carga utilizado por <a href="http://www.facebook.com">www.facebook.com</a>.</p>
+							<a id="f-i-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Facebook-Iphone.jpg" alt="Facebook | ISP: NOS | Traceroute"></a>
+							<a id="f-w-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Facebook-Windows.png" alt="Facebook | ISP: Vodafone | Traceroute"></a>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive trace-iphone img-rounded center-block" src="img/results/fullsize/Facebook-Iphone.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Facebook -->
+			<!-- Start Thomman -->
+			<div class="container results-part" id="thomman-results">
+				<h4 class="section-heading text-center">Thomman.com</h4>
+				<div class="row content-results">
+					<div class="col-md-6">
+						<img class="img-responsive trace-iphone img-rounded center-block" src="img/results/fullsize/Thomman-Iphone.jpg">
+					</div>
+					<div class="col-md-6 text-details">
+						<p>
+							A ligação com destino a <a href="http://www.thomman.com">www.thomman.com</a> é feita, em parte, por <i>routers</i> localizados nos Estados Unidos da América. Seria de esperar que o tráfego com destino a uma cidade europeia fosse rotado por terra, nomeadamente pela Europa, até atingir o seu destino. No entanto as diferentes métricas utilizadas para selecionar os caminhos entre os <i>routers</i> na Internet não são apenas velocidade mas sim: latência, carga, largura de banda, distância e custo e inclusive contratos entre operadores de todo o mundo.
+						</p>
+						<p>
+							Em termos de custo, ambas as rotas apresentam grande igualdadem sendo que latência da ligação originada no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> NOS é superior.
+						</p>
+						<a id="t-i-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Thomman-Iphone.jpg" alt="Thomman | ISP: NOS | Traceroute"></a>
+						<a id="t-w-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Thomman-Windows.png" alt="Thomman | ISP: Vodafone | Traceroute"></a>
+						<a id="t-v-pop"><img class="img-rounded imageresource" src="img/results/fullsize/Thomman-Visual.png" alt="Thomman | ISP: NOS | Visual Traceroute"></a>
+					</div>
+				</div>
+			</div>
+			<!-- End Thomman -->
+			<!-- Start NOS -->
+			<div class="withColorContainer" id="nos-results">
+				<div class="container results-part">
+					<h4 class="section-heading text-center">NOS.pt</h4>
+					<div class="row content-results">
+						<div class="col-md-6 text-details">
+							<p>
+								A escolha de um servidor da NOS como destino permitia verificar se a hipótese de que o tráfego com origem na NOS chegaria mais rapidamente ao destino seria plausível.
+							</p>
+							<p>
+		  						Parte da rota usada pela Vodafone para chegar ao servidor <a href="http://www.nos.pt">www.nos.pt</a> seguiu por território espanhol enquanto o tráfego originado no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> NOS nunca deixa a rede de domínio da própria operadora, chegando de forma mais eficiente e rápida ao destino.
+							</p>
+							<p>
+								As relações entre os operadores não são as ideais em termos de eficiência e de custo. Em termos práticos seria de esperar que o tráfego fluísse por território português e tal não se verificou quando este teve origem no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> Vodafone.
+							</p>
+							<a id="n-i-pop"><img class="img-rounded imageresource" src="img/results/fullsize/NOS-Iphone.jpg" alt="NOS | ISP: NOS | Traceroute"></a>
+							<a id="n-w-pop"><img class="img-rounded imageresource" src="img/results/fullsize/NOS-Windows.png" alt="NOS | ISP: Vodafone | Traceroute"></a>
+							<a id="n-v-pop"><img class="img-rounded imageresource" src="img/results/fullsize/NOS-Visual.png" alt="NOS | ISP: NOS | Visual Traceroute"></a>
+						</div>
+						<div class="col-md-6">
+							<img class="img-responsive trace-iphone img-rounded center-block" src="img/results/fullsize/NOS-Iphone.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End NOS -->
+			<!-- Start UA -->
+			<div class="container results-part" id="ua-results">
+				<h4 class="section-heading text-center">UA.pt</h4>
+				<div class="row content-results">
+					<div class="col-md-6">
+						<img class="img-responsive trace-iphone img-rounded center-block" src="img/results/fullsize/UA-Iphone.jpg">
+					</div>
+					<div class="col-md-6 text-details">
+						<p>
+							O ponto de encontro das rotas com origem nos diferentes operadores é no <i>Backbone</i> da <abbr title="Fundação para a Computação Científica Nacional" class="initialism">FCCN</abbr> no Porto, local onde o tráfego é roteado no sentido Vodafone -> UA e NOS -> UA, não sendo necessariamente um ponto de roteamento entre os <abbr title="Internet Service Provider" class="initialism">ISP</abbr>'s.
+						</p>
+						<p>
+							O tráfego originado no <abbr title="Internet Service Provider" class="initialism">ISP</abbr> NOS mostra uma latência superior em relação à Vodafone.
+						</p>
+						<p>
+							Talvez o ponto mais interessante da utilização de um servidor localizado em Aveiro, cidade da qual partiu todo tráfego gerado nos <abbr title="Internet Service Provider" class="initialism">ISP</abbr>'s Vodafone PT e NOS PT, seja o tráfego ser  "forçado" a "saltar" entre <i>routers</i> geograficamente distantes, como é o caso do <i>routers</i> com o endereço de IP <code>193.137.0.14</code>, que fica localizado em Lisboa.
+						</p>
+						<a id="u-i-pop"><img class="img-rounded imageresource" src="img/results/fullsize/UA-Iphone.jpg" alt="UA | ISP: NOS | Traceroute"></a>
+						<a id="u-w-pop"><img class="img-rounded imageresource" src="img/results/fullsize/UA-Windows.png" alt="UA | ISP: Vodafone | Traceroute"></a>
+					</div>
+				</div>
+			</div>
+			<!-- End UA -->
+		</div>
+		<!-- FIM Resultados + Análise %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		
+		<!-- Comparação Resultados %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<div id="compare-results" class="highlightColorContainer">
+			<div class="container text-center" id="graph-containers">
+				<h5 class="section-heading text-center">Comparação de Resultados</h5>
+				<br>
+				<div class="btn-group" data-toggle="buttons">
+  					<label class="btn btn-primary btn-checkbox" id="google-check">
+    					<input id="google-checkbox" type="checkbox" autocomplete="off">Google
+  					</label>
+  					<label class="btn btn-primary btn-checkbox" id="facebook-check">
+    					<input id="facebook-checkbox" type="checkbox" autocomplete="off">Facebook
+  					</label>
+  					<label class="btn btn-primary btn-checkbox" id="thomman-check">
+    					<input id="thomman-checkbox" type="checkbox" autocomplete="off">Thomman
+  					</label>
+  					<label class="btn btn-primary btn-checkbox" id="nos-check">
+    					<input id="nos-checkbox" type="checkbox" autocomplete="off">NOS
+  					</label>
+  					<label class="btn btn-primary btn-checkbox" id="ua-check">
+    					<input id="ua-checkbox" type="checkbox" autocomplete="off">UA
+  					</label>
+				</div>
+				<div id="graph-div"></div>
+			</div>
+		</div>
+		<!-- FIM Comparação Resultados %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		<!-- Conclusões %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<div id="conclusions" class="container content-results">
+	  		<h2 class="section-heading text-center">Conclusões</h2>
+				<hr class="primary">
+	  			<p>
+	  				Nem sempre o caminho mais curto é o mais eficiente ou até mesmo possível por questões de latência, carga, largura de banda, distância e custo e mesmo legais / contratuais.
+	  			</p>
+	  			<p>
+	  				O caminho mais curto normalmente não é o mais eficiente de acordo não só com os algoritmos em que a Internet se baseia mas também com as ligações existentes e acordos entre <abbr title="Internet Service Provider" class="initialism">ISP</abbr>s. Por exemplo a ligação feita de Portugal a um servidor na Europa usou rotas que implicaram o acesso a servidores localizados num outro continente (América).
+	  			</p>
+	  			<p>
+	  				Dependendo do operador de origem do tráfego pode-se ter, dentro do território português, variadíssimos caminhos a percorrer dependendo das condições da rede no momento, das ligações entre operadores e da própria forma como o operador estruturou a comunicação com a restante Internet.
+	  			</p>
+	  			<p>
+	  				As ligações existentes através do Atlântico colocam Portugal em vantagem na comunicação com os Estados Unidos da América e com outros países de forma direta, rápida e muito eficiente, uma vez que elimina o roteamento por caminhos mais distantes e "sobrelotados".
+	  			</p>
+	  			<p>
+	  				No geral, entre as operadoras envolvidas na experiência, a Vodafone tem melhor conectividade com o resto do mundo.
+	  			</p>
+		</div>
+
+		<div class="container" >
+			<p id="notes">* As capturas de ecra mostram o <abbr title="Internet Service Provider" class="initialism">ISP</abbr> de onde teve origem o comando traceroute. Sendo o conteúdo da imagem o resultado dessa mesma atividade.</p>
+		</div>
+
+		<!-- FIM Conclusões %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+		<!-- Caixa Modal Bootstrap para apresentar imagens -->
+		<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="Caixa de Imagens" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+		        <h4 class="modal-title" id="pop-title"></h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-responsive center-block" src="" id="imagepreview">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- FIM Caixa Modal Bootstrap para apresentar imagens -->
+
+		<!-- RODAPÉ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+		<footer>
+			<div class="container text-center">
+				<p class="copyright text-muted" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+				<img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons</p>
+				<a class="copyright text-muted">Copyright &copy; Simão Gomes | Pedro Teixeira 2016-2017
+			</div>
+		</footer>
+		<!-- FIM RODAPÉ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+	</body>
+</html>
