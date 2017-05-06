@@ -7,7 +7,7 @@ var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});
 map.addLayer(osm);
 
 //------------------------------------------------------------------------------
-//Mostra coornadas quando se cliqua com o butão do rato
+//Mostra coordenadas quando se cliqua com o botão do rato
 map.on("click", mostraCoordenadas);
 
 function mostraCoordenadas(e){
