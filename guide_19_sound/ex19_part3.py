@@ -20,7 +20,7 @@ def main(argv):
     stream.close()
 
     data = struct.unpack("%dh" % num_frames, raw_data) # "B" para ficheiros 8bits
-
+    
     # Aplica efeito sobre data, para output_data
     i = 2
     output_data = []
@@ -31,8 +31,16 @@ def main(argv):
             param = int(argv[i + 1])
             output_data = foo(data, param)
             i += 1
-        #elif
-        #    ...  # Outros filtros
+        # Outros filtros
+        elif argv[i] == "reverse":
+            output_data = reverse(data)
+        elif argv[i] == "volume":
+            i += 1 
+            output_data = volume(data, int(argv[i])) 
+        #elif argv[i] == "normalize": 
+        #    output_data = normalize(data)
+        #elif argv[i] == "fade-in"
+        #    output_data = fadeIn(data, sampleRate, duration)
         i += 1
 
     wvData = []
@@ -46,6 +54,17 @@ def main(argv):
     stream.setnframes(len(wvData))
     stream.writeframes(bytearray(wvData))
     stream.close()
+
+def volume(data, value):
+    output = []
+    for index,value in enumerate(data):
+        output.append(value)
+    return output
+
+#def normalize(data):
+
+def fadeIn(data, sampleRate, duration):
+      
 
 if len(sys.argv) < 3:
     print("Usage: %s wave-file filter1 <params> filter2 <params> ..." % sys.argv[0])

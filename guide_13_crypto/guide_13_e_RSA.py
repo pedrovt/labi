@@ -9,7 +9,7 @@ path = str(raw_input("Save keys as: "))+".pem"
 
 keypair = RSA.generate(n_bits)
 file = open(path, "w")
-file.write(keypair.exportKey( "PEM", "senha" ))
+file.write(keypair.publickey().exportKey( "PEM"))
 file.close()
 
 file = open(path, "r" )

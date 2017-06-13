@@ -1,39 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <stats>
-  <value time="1489853660">
-    <cpu>27</cpu>
-    <network>60526239</network>
+  <value time="1490266284">
+    <cpu>36</cpu>
+    <network>7146083</network>
   </value>
-  <value time="1489853662">
-    <cpu>38</cpu>
-    <network>60538684</network>
+  <value time="1490266286">
+    <cpu>57</cpu>
+    <network>7146861</network>
   </value>
-  <value time="1489853664">
+  <value time="1490266288">
     <cpu>32</cpu>
-    <network>60544133</network>
+    <network>7148735</network>
   </value>
-  <value time="1489853666">
-    <cpu>29</cpu>
-    <network>60547191</network>
+  <value time="1490266290">
+    <cpu>42</cpu>
+    <network>7150745</network>
   </value>
-  <value time="1489853668">
+  <value time="1490266292">
+    <cpu>23</cpu>
+    <network>7153776</network>
+  </value>
+  <value time="1490266294">
     <cpu>37</cpu>
-    <network>60550835</network>
+    <network>7163533</network>
   </value>
-  <value time="1489853670">
-    <cpu>35</cpu>
-    <network>60552249</network>
+  <value time="1490266296">
+    <cpu>34</cpu>
+    <network>7169102</network>
   </value>
-  <value time="1489853672">
-    <cpu>46</cpu>
-    <network>60552369</network>
+  <value time="1490266298">
+    <cpu>23</cpu>
+    <network>7174501</network>
   </value>
-  <value time="1489853674">
-    <cpu>35</cpu>
-    <network>60554627</network>
-  </value>
-  <value time="1489853676">
-    <cpu>50</cpu>
-    <network>60554735</network>
+  <value time="1490266300">
+    <cpu>30</cpu>
+    <network>7178496</network>
   </value>
 </stats>

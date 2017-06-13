@@ -7,7 +7,7 @@
 </output>
 <monitor>
 <cpu active="false" />
-<network active="true" />
-<ram active="true" ></ram>
+<network active="false" />
+<ram active="false" ></ram>
 </monitor>
 </conf>

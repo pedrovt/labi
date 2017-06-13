@@ -7,8 +7,9 @@ def main():
     doc = etree.parse('playlist.xspf')
     schema = etree.parse('xspf-draft8.rng.xml')
     validator = etree.RelaxNG(schema)
-
+    test = validator.validate(doc)
     print(validator.validate(doc))
+
     print(validator.error_log.last_error)
 
 main()

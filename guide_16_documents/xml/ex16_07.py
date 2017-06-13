@@ -41,6 +41,9 @@ def main():
         elif ram and not cpu:
             #print("Doing not cpu and ram")
             writer.writerow({'time': time.time(), 'cpu' : 'N/A', 'ram' : psutil.virtual_memory()[1]})
+        elif not ram and not cpu:
+            #print("Doing not cpu and not ram")
+            writer.writerow({'time': time.time(), 'cpu' : 'N/A', 'ram' : 'N/A'})
 
     fout.close()
     print("File created sucessfully.")
